@@ -1,0 +1,9 @@
+.myclass {
+    background: purple;
+    color: sandybrown;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 16px;
+    padding: 12px;
+    text-align: center;
+}
