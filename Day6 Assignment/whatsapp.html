@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="whatsapp.js"></script>
+    <style>
+        .outdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .div1 {
+            background: blue;
+            height: 60vh;
+            width: 40vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .div1-1 {
+            flex: 2;
+            background: green;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2 {
+            flex: 8;
+            background: khaki;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .msg-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .msg-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .div3 {
+            flex: 1.5;
+            background: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            border-radius: 8px;
+            border: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outdiv">
+        <div class="div1">
+            <div class="div1-1">
+                <div style="flex: 2;">
+                    <img src="https://picsum.photos/id/237/200/300" alt="" height="40px" width="40px"
+                        style="border-radius: 50%;">
+                </div>
+                <div style="flex: 4;">Vikas</div>
+            </div>
+            <div class="div2">
+                <div id="msgright1" class="msg-right">
+                </div>
+                <div id="msgleft1" class="msg-left">
+                </div>
+
+
+            </div>
+            <div class="div3">
+                <input id="input1" type="text"> <button onclick="msgsend1(this)">send</button></input>
+            </div>
+        </div>
+
+
+        <div class="div1" style="margin-left: 50px;">
+
+            <div class="div1-1">
+                <div style="flex: 2;"><img src="https://picsum.photos/id/237/200/300" alt="" height="40px" width="40px"
+                        style="border-radius: 50%; ">
+                </div>
+                <div style="flex: 4;">Vikas</div>
+            </div>
+            <div class="div2">
+                <div id="msgright2" class="msg-right"> </div>
+                <div id="msgleft2" class="msg-left"> </div>
+
+            </div>
+            <div class="div3">
+                <input id="input2" type="text" style="border-radius: 8px; border: 0; font-size: 16px;"> <button
+                    onclick="msgsend2()">send</button></input>
+            </div>
+        </div>
+</body>
+
+</html>
